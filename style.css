@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #131313;
+}
+
+.header,
+.footer {
+    background-color: #6f6f6f;
+}
+
+.main {
+    background-color: #dec2e8;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-item a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-item a:hover {
+    color: #d21414;
+}
+
+.nav-link {
+    padding: 0 20px;
+    line-height: 50px;
+    transition: 0.3s;
+}
+
+.contacts-link,
+.code-example-link,
+.experience-link {
+    text-decoration: none;
+    color: #6f6f6f;
+    transition: color 0.5s;
+}
+
+.contacts-link:hover {
+    color: #d21414;
+}
+
+.code-example-link:hover {
+    color: #d21414;
+}
+
+.experience-link:hover {
+    color: #d21414;
+}
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.profile-photo {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.section {
+    width: 50%;
+    padding: 20px;
+}
+
+.section-title {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+    letter-spacing: 5px;
+    color: #6f6f6f;
+}
+
+.contacts-list,
+.skills-list,
+.languages-list {
+    list-style: none;
+}
+
+.skills-text,
+.languages-text {
+    position: relative;
+    padding-left: 30px;
+}
+
+.skills-text::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0px;
+    width: 8px;
+    height: 8px;
+    border: 1px solid #d21414;
+    border-radius: 50%;
+}
+
+.languages-text::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0px;
+    width: 8px;
+    height: 8px;
+    border: 1px solid #d21414;
+    border-radius: 50%;
+}
+
+.about-me-text {
+    text-align: justify;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #ffffff;
+    background-color: #6f6f6f;
+}
+
+.footer-github-img,
+.footer-course-img {
+    width: 60px;
+    margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+    .section {
+        width: 100%;
+    }
+}
